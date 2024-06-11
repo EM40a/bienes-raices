@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="src/output.css">
   <link rel="shortcut icon" href="public/logo.svg" type="image/x-icon">
   <title>TP - Laboratorio III</title>
+  <script defer type="module" src="scripts/app.js"></script>
 </head>
 
 <body class="font-sans">
@@ -41,142 +42,42 @@
   <main>
     <section class="container" id="nosotros">
       <h2 class="sub">Mas sobre nosotros</h2>
-      <article class="grid grid-cols-auto-fit-300 gap-8 place-items-center">
+      <article id="container-nosotros" class="grid grid-cols-auto-fit-300 gap-8 place-items-center"></article>
+
+      <template id="template-nosotros">
         <div class="flex flex-col min-w-60 max-w-sm items-center">
           <figure class="space-y-4 mb-6">
-            <img class="hover:scale-110 transition-transform mx-auto" src="public/icono1.svg" alt="Seguridad">
-            <figcaption class="font-bold uppercase text-2xl">Seguridad</figcaption>
+            <img class="hover:scale-110 transition-transform mx-auto" src="" alt="">
+            <figcaption class="font-bold uppercase text-2xl"></figcaption>
           </figure>
-
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, omnis. Impedit voluptate quae sint quas
-            perferendis sapiente accusantium minima enim.
-          </p>
+          <p></p>
         </div>
-
-        <div class="flex flex-col min-w-60 max-w-md items-center">
-          <figure class="gap-y-4 mb-6 flex flex-col items-center">
-            <img class="hover:scale-110 transition-transform mx-auto" src="public/icono2.svg" alt="Seguridad">
-            <figcaption class="font-bold uppercase text-2xl">El mejor precio</figcaption>
-          </figure>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, omnis. Impedit voluptate quae sint quas
-            perferendis sapiente accusantium minima enim.
-          </p>
-        </div>
-
-        <div class="flex flex-col min-w-60 max-w-md items-center">
-          <figure class="space-y-4 mb-6">
-            <img class="hover:scale-110 transition-transform mx-auto" src="public/icono3.svg" alt="Seguridad">
-            <figcaption class="font-bold uppercase text-2xl">A tiempo</figcaption>
-          </figure>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, omnis. Impedit voluptate quae sint quas
-            perferendis sapiente accusantium minima enim.
-          </p>
-        </div>
-      </article>
+      </template>
     </section>
 
     <section class="container">
       <h2 class="sub">Casas y Departamentos en Venta</h2>
-      <article class="grid grid-cols-auto-fit-300 place-content-center gap-6 mb-24">
+      <article id="container-casas" class="grid grid-cols-auto-fit-300 place-content-center gap-6 mb-24"></article>
+
+      <template id="template-casas">
         <div class="hover:-translate-y-3 transition-transform border border-black/20 rounded-sm overflow-hidden">
-          <img class="border-b-2 border-black/20 pepe" src="public/anuncio1.jpg" alt="anuncio1">
+          <img class="border-b-2 border-black/20 pepe" src="" alt="">
           <div class="flex flex-col gap-4 p-3">
-            <h3 class="text-2xl md:text-3xl font-semibold">Casa de Lujo en el Lago</h3>
-            <p class="overflow-clip">
-              Casa en el lago con excelente vista, acabados de lujo a un excelente precio.
-            </p>
-
-            <h4 class="font-semibold text-green-600 dark:text-green-400">$350.000</h4>
-
-            <div class="flex gap-4 justify-evenly">
-              <figure class="flex gap-2 items-center">
-                <img loading="lazy" src="public/icono_wc.svg" alt="icono_wc">
-                <figcaption class="text-sm">3</figcaption>
-              </figure>
-
-              <figure class="flex gap-2 items-center">
-                <img loading="lazy" src="public/icono_estacionamiento.svg" alt="icono_estacionamiento">
-                <figcaption class="text-sm">3</figcaption>
-              </figure>
-
-
-              <figure class="flex gap-2 items-center">
-                <img loading="lazy" src="public/icono_dormitorio.svg" alt="icono_dormitorio">
-                <figcaption class="text-sm">4</figcaption>
-              </figure>
-            </div>
-
+            <h3 class="text-2xl md:text-3xl font-semibold"></h3>
+            <p class="overflow-clip"></p>
+            <h4 class="font-semibold text-green-600 dark:text-green-400"></h4>
+            <div id="tools" class="flex gap-4 justify-evenly"></div>
             <button type="button" class="btn btn-primary">Ver Propiedad</button>
           </div>
         </div>
+      </template>
 
-        <div class="hover:-translate-y-3 transition-transform border border-black/20 rounded-sm overflow-hidden">
-          <img class="border-b-2 border-black/20" src="public/anuncio1.jpg" alt="anuncio1">
-          <div class="flex flex-col gap-4 p-3">
-            <h3 class="text-2xl md:text-3xl font-semibold">Casa de Lujo en el Lago</h3>
-            <p class="max-w-prose overflow-clip">
-              Casa en el lago con excelente vista, acabados de lujo a un excelente precio.
-            </p>
-
-            <h4 class="font-semibold text-green-600 dark:text-green-400">$350.000</h4>
-
-            <div class="flex gap-4 justify-evenly">
-              <figure class="flex gap-2 items-center">
-                <img loading="lazy" src="public/icono_wc.svg" alt="icono_wc">
-                <figcaption class="text-sm">3</figcaption>
-              </figure>
-
-              <figure class="flex gap-2 items-center">
-                <img loading="lazy" src="public/icono_estacionamiento.svg" alt="icono_estacionamiento">
-                <figcaption class="text-sm">3</figcaption>
-              </figure>
-
-
-              <figure class="flex gap-2 items-center">
-                <img loading="lazy" src="public/icono_dormitorio.svg" alt="icono_dormitorio">
-                <figcaption class="text-sm">4</figcaption>
-              </figure>
-            </div>
-
-            <button type="button" class="btn btn-primary">Ver Propiedad</button>
-          </div>
-        </div>
-
-        <div class="hover:-translate-y-3 transition-transform border border-black/20 rounded-sm overflow-hidden">
-          <img class="border-b-2 border-black/20" src="public/anuncio1.jpg" alt="anuncio1">
-          <div class="flex flex-col gap-4 p-3">
-            <h3 class="text-2xl md:text-3xl font-semibold">Casa de Lujo en el Lago</h3>
-            <p class="max-w-prose overflow-clip">
-              Casa en el lago con excelente vista, acabados de lujo a un excelente precio.
-            </p>
-
-            <h4 class="font-semibold text-green-600 dark:text-green-400">$350.000</h4>
-
-            <div class="flex gap-4 justify-evenly">
-              <figure class="flex gap-2 items-center">
-                <img loading="lazy" src="public/icono_wc.svg" alt="icono_wc">
-                <figcaption class="text-sm">3</figcaption>
-              </figure>
-
-              <figure class="flex gap-2 items-center">
-                <img loading="lazy" src="public/icono_estacionamiento.svg" alt="icono_estacionamiento">
-                <figcaption class="text-sm">3</figcaption>
-              </figure>
-
-
-              <figure class="flex gap-2 items-center">
-                <img loading="lazy" src="public/icono_dormitorio.svg" alt="icono_dormitorio">
-                <figcaption class="text-sm">4</figcaption>
-              </figure>
-            </div>
-
-            <button type="button" class="btn btn-primary">Ver Propiedad</button>
-          </div>
-        </div>
-      </article>
+      <template id="template-tools">
+        <figure class="flex gap-2 items-center">
+          <img loading="lazy" src="" alt="">
+          <figcaption class="text-sm"></figcaption>
+        </figure>
+      </template>
     </section>
 
     <section class="encuentra text-white" id="contacto">
