@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="src/output.css">
+  <link rel="shortcut icon" href="public/logo.svg" type="image/x-icon">
+  <title>TP - Laboratorio III</title>
+</head>
+
+<body class="font-sans">
+  <header class="h-svh flex flex-col justify-between text-white">
+    <nav class="container flex justify-between items-center py-6">
+      <a href="/" title="Inicio">
+        <img src="public/logo.svg" alt="Logo de Bienes Raíces" title="Inicio" class="w-64">
+      </a>
+
+      <ul class="flex gap-6 capitalize group-items">
+        <li class="hover:-translate-y-1 transition-transform">
+          <a href="#nosotros">nosotros</a>
+        </li>
+        <li class="hover:-translate-y-1 transition-transform">
+          <a href="#anuncios">anuncios</a>
+        </li>
+        <li class="hover:-translate-y-1 transition-transform">
+          <a href="#blog">blog</a>
+        </li>
+        <li class="hover:-translate-y-1 transition-transform">
+          <a href="#contacto">contacto</a>
+        </li>
+      </ul>
+    </nav>
+
+    <article class="container space-y-8 mb-20  font-semibold">
+      <h1 class="text-3xl sm:text-4xl">Venta de Casas y Departamentos</h1>
+      <h2 class="text-2xl sm:text-3xl">Exclusivos de Lujo</h2>
+    </article>
+  </header>
+
+  <main>
+    <section class="container" id="nosotros">
+      <h2 class="sub">Mas sobre nosotros</h2>
+      <article class="grid grid-cols-auto-fit-300 gap-8 place-items-center">
+        <div class="flex flex-col min-w-60 max-w-sm items-center">
+          <figure class="space-y-4 mb-6">
+            <img class="hover:scale-110 transition-transform mx-auto" src="public/icono1.svg" alt="Seguridad">
+            <figcaption class="font-bold uppercase text-2xl">Seguridad</figcaption>
+          </figure>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, omnis. Impedit voluptate quae sint quas
+            perferendis sapiente accusantium minima enim.
+          </p>
+        </div>
+
+        <div class="flex flex-col min-w-60 max-w-md items-center">
+          <figure class="gap-y-4 mb-6 flex flex-col items-center">
+            <img class="hover:scale-110 transition-transform mx-auto" src="public/icono2.svg" alt="Seguridad">
+            <figcaption class="font-bold uppercase text-2xl">El mejor precio</figcaption>
+          </figure>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, omnis. Impedit voluptate quae sint quas
+            perferendis sapiente accusantium minima enim.
+          </p>
+        </div>
+
+        <div class="flex flex-col min-w-60 max-w-md items-center">
+          <figure class="space-y-4 mb-6">
+            <img class="hover:scale-110 transition-transform mx-auto" src="public/icono3.svg" alt="Seguridad">
+            <figcaption class="font-bold uppercase text-2xl">A tiempo</figcaption>
+          </figure>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, omnis. Impedit voluptate quae sint quas
+            perferendis sapiente accusantium minima enim.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <section class="container">
+      <h2 class="sub">Casas y Departamentos en Venta</h2>
+      <article class="grid grid-cols-auto-fit-300 place-content-center gap-6 mb-24">
+        <div class="hover:-translate-y-3 transition-transform border border-black/20 rounded-sm overflow-hidden">
+          <img class="border-b-2 border-black/20 pepe" src="public/anuncio1.jpg" alt="anuncio1">
+          <div class="flex flex-col gap-4 p-3">
+            <h3 class="text-2xl md:text-3xl font-semibold">Casa de Lujo en el Lago</h3>
+            <p class="overflow-clip">
+              Casa en el lago con excelente vista, acabados de lujo a un excelente precio.
+            </p>
+
+            <h4 class="font-semibold text-green-600 dark:text-green-400">$350.000</h4>
+
+            <div class="flex gap-4 justify-evenly">
+              <figure class="flex gap-2 items-center">
+                <img loading="lazy" src="public/icono_wc.svg" alt="icono_wc">
+                <figcaption class="text-sm">3</figcaption>
+              </figure>
+
+              <figure class="flex gap-2 items-center">
+                <img loading="lazy" src="public/icono_estacionamiento.svg" alt="icono_estacionamiento">
+                <figcaption class="text-sm">3</figcaption>
+              </figure>
+
+
+              <figure class="flex gap-2 items-center">
+                <img loading="lazy" src="public/icono_dormitorio.svg" alt="icono_dormitorio">
+                <figcaption class="text-sm">4</figcaption>
+              </figure>
+            </div>
+
+            <button type="button" class="btn btn-primary">Ver Propiedad</button>
+          </div>
+        </div>
+
+        <div class="hover:-translate-y-3 transition-transform border border-black/20 rounded-sm overflow-hidden">
+          <img class="border-b-2 border-black/20" src="public/anuncio1.jpg" alt="anuncio1">
+          <div class="flex flex-col gap-4 p-3">
+            <h3 class="text-2xl md:text-3xl font-semibold">Casa de Lujo en el Lago</h3>
+            <p class="max-w-prose overflow-clip">
+              Casa en el lago con excelente vista, acabados de lujo a un excelente precio.
+            </p>
+
+            <h4 class="font-semibold text-green-600 dark:text-green-400">$350.000</h4>
+
+            <div class="flex gap-4 justify-evenly">
+              <figure class="flex gap-2 items-center">
+                <img loading="lazy" src="public/icono_wc.svg" alt="icono_wc">
+                <figcaption class="text-sm">3</figcaption>
+              </figure>
+
+              <figure class="flex gap-2 items-center">
+                <img loading="lazy" src="public/icono_estacionamiento.svg" alt="icono_estacionamiento">
+                <figcaption class="text-sm">3</figcaption>
+              </figure>
+
+
+              <figure class="flex gap-2 items-center">
+                <img loading="lazy" src="public/icono_dormitorio.svg" alt="icono_dormitorio">
+                <figcaption class="text-sm">4</figcaption>
+              </figure>
+            </div>
+
+            <button type="button" class="btn btn-primary">Ver Propiedad</button>
+          </div>
+        </div>
+
+        <div class="hover:-translate-y-3 transition-transform border border-black/20 rounded-sm overflow-hidden">
+          <img class="border-b-2 border-black/20" src="public/anuncio1.jpg" alt="anuncio1">
+          <div class="flex flex-col gap-4 p-3">
+            <h3 class="text-2xl md:text-3xl font-semibold">Casa de Lujo en el Lago</h3>
+            <p class="max-w-prose overflow-clip">
+              Casa en el lago con excelente vista, acabados de lujo a un excelente precio.
+            </p>
+
+            <h4 class="font-semibold text-green-600 dark:text-green-400">$350.000</h4>
+
+            <div class="flex gap-4 justify-evenly">
+              <figure class="flex gap-2 items-center">
+                <img loading="lazy" src="public/icono_wc.svg" alt="icono_wc">
+                <figcaption class="text-sm">3</figcaption>
+              </figure>
+
+              <figure class="flex gap-2 items-center">
+                <img loading="lazy" src="public/icono_estacionamiento.svg" alt="icono_estacionamiento">
+                <figcaption class="text-sm">3</figcaption>
+              </figure>
+
+
+              <figure class="flex gap-2 items-center">
+                <img loading="lazy" src="public/icono_dormitorio.svg" alt="icono_dormitorio">
+                <figcaption class="text-sm">4</figcaption>
+              </figure>
+            </div>
+
+            <button type="button" class="btn btn-primary">Ver Propiedad</button>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="encuentra text-white" id="contacto">
+      <article class="container flex flex-col justify-center gap-8 h-96 ">
+        <h2 class="font-semibold text-3xl md:text-4xl">Encuentra la casa de tus sueños</h2>
+        <p>
+          Llena el formulario de contacto y un asesor se pondrá en contacto a la brevedad
+        </p>
+        <button class="btn btn-primary w-fit" type="button">Contáctenos</button>
+      </article>
+    </section>
+
+    <section class="container grid grid-cols-auto-fit-300 gap-4" id="blog">
+      <article>
+        <h1 class="sub">Nuestro Blog</h1>
+        <div class="space-y-6">
+          <div class="flex gap-4">
+            <img class="max-w-64" src="public/blog1.jpg" alt="blog1">
+            <div class="flex flex-col justify-between py-4">
+              <h2 class="text-xl md:text-2xl font-bold dark:text-rose-of-sharon-200">
+                Terraza en el techo de tu casa
+              </h2>
+              <p>
+                Escrito el: <time class="accent" datetime="20/10/2019">20/10/2019</time>
+                por: <author class="accent">Admin
+                </author>
+              </p>
+              <p>
+                Consejos para construir una terraza en el techo de tu casa, con los mejores materiales y ahorrando
+                dinero
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <img class="max-w-64" src="public/blog2.jpg" alt="blog1">
+            <div class="flex flex-col justify-between py-4">
+              <h2 class="text-xl md:text-2xl font-bold dark:text-rose-of-sharon-200">
+                Terraza en el techo de tu casa
+              </h2>
+              <p>
+                Escrito el: <time class="accent" datetime="20/10/2019">20/10/2019</time>
+                por: <author class="accent">Admin
+                </author>
+              </p>
+              <p>
+                Consejos para construir una terraza en el techo de tu casa, con los mejores materiales y ahorrando
+                dinero
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </article>
+
+      <article class="max-w-prose">
+        <h1 class="sub">Comentarios</h1>
+
+        <blockquote
+          class="bg-rose-of-sharon-200 text-rose-of-sharon-950 dark:bg-rose-of-sharon-700 dark:text-rose-of-sharon-200 p-12 rounded-lg mb-4 before:[content:'❛❛'] before:text-4xl before:-ml-6">
+          Lorem
+          ipsum dolor sit amet consectetur adipisicing elit. Repellendus omnis minima optio mollitia? Nihil optio
+          porro
+          voluptate enim deleniti ratione tempora tempore obcaecati, quod in ex numquam facere iusto ducimus fugit
+          odit
+          ullam reiciendis accusamus, quaerat eius nemo alias! Facilis.
+          <author class="before:[content:'-'] text-end block text-rose-of-sharon-700 dark:text-rose-of-sharon-200">
+            Juan Perez
+          </author>
+        </blockquote>
+      </article>
+    </section>
+  </main>
+
+  <footer class="container">
+    <div class="flex justify-between flex-wrap gap-2 items-center py-6">
+      <ul class="flex gap-6 capitalize group-items">
+        <li class="hover:-translate-y-1 transition-transform">
+          <a href="#nosotros">nosotros</a>
+        </li>
+        <li class="hover:-translate-y-1 transition-transform">
+          <a href="#anuncios">anuncios</a>
+        </li>
+        <li class="hover:-translate-y-1 transition-transform">
+          <a href="#blog">blog</a>
+        </li>
+        <li class="hover:-translate-y-1 transition-transform">
+          <a href="#contacto">contacto</a>
+        </li>
+      </ul>
+
+      <a href="/" title="Inicio">
+        <img loading="lazy" src="public/logo.svg" alt="Logo de Bienes Raíces" title="Inicio" class="w-64">
+      </a>
+
+      <p class="w-full text-center text-gray-600 dark:text-gray-300">
+        Algunos derechos reservados &copy;<time datetime="">2024</time>
+      </p>
+    </div>
+  </footer>
+
+  <div id="loader">
+    <div class="lds-default">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+</body>
+
+</html>

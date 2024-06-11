@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  color-scheme: light dark;
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  .accent {
+    @apply text-rose-of-sharon-500;
+  }
+}
+
+@layer components {
+  .sub {
+    @apply text-3xl md:text-4xl font-bold text-center py-28;
+  }
+
+  .btn {
+    @apply font-semibold rounded-lg text-sm px-6 py-3 focus:outline-none;
+  }
+
+  .btn-primary {
+    @apply bg-rose-of-sharon-500 text-rose-of-sharon-950 active:bg-rose-of-sharon-700 hover:bg-rose-of-sharon-600 focus:ring-4 focus:ring-rose-of-sharon-200
+    disabled:bg-rose-of-sharon-950 disabled:text-rose-of-sharon-600;
+  }
+
+  .btn-succes {
+    @apply bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800;
+  }
+
+  .btn-danger {
+    @apply bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900;
+  }
+
+  .btn-warning {
+    @apply bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 dark:focus:ring-yellow-900;
+  }
+}
+
+.encuentra {
+  background: url("../public/encuentra.jpg") no-repeat center center/cover;
+}
+
+header {
+  background: url("../public/header.jpg") no-repeat center center/cover;
+}
