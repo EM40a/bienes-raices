@@ -1,3 +1,4 @@
 node_modules/
 pnpm-lock.yaml
-.vercel
+yarn.lock
+package-lock.json
