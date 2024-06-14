@@ -79,4 +79,21 @@ const CASAS = [
   },
 ];
 
-export { NOSOTROS, CASAS };
+const BLOG = [
+  {
+    title: "Terraza en el techo de tu casa",
+    time: "20/10/2023",
+    author: "Eduardo Moray",
+    content:
+      "Consejos para construir una terraza en el techo de tu casa, con los mejores materiales y ahorrando dinero",
+  },
+  {
+    title: "Los mejores colores para tu casa",
+    time: "12/04/2024",
+    author: "Abril Puentes",
+    content:
+      "Consejos para elegir los mejores colores para tu casa, según tu personalidad y estilo de vida",
+  },
+];
+
+export { NOSOTROS, CASAS, BLOG };

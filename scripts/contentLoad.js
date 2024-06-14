@@ -1,4 +1,4 @@
-import { NOSOTROS, CASAS } from "./data.js";
+import { NOSOTROS, CASAS, BLOG } from "./data.js";
 
 const loadNosotrosHandler = (e) => {
   const $contenedor = document.getElementById("container-nosotros");
@@ -45,4 +45,21 @@ const loadCasasHandler = (e) => {
   });
 };
 
-export { loadNosotrosHandler, loadCasasHandler };
+const loadBlogHandler = (e) => {
+  const $contenedor = document.getElementById("container-blog");
+  const $template = document.getElementById("template-blog").content;
+
+  BLOG.forEach(({ title, content, time, author }, i) => {
+    const clone = document.importNode($template, true);
+    clone.querySelector("h2").textContent = title;
+    clone.querySelector("img").src = `public/blog${i + 1}.jpg`;
+    clone.querySelector("img").alt = title;
+    clone.querySelector("time").textContent = time;
+    clone.querySelector("time").dateTime = time;
+    clone.querySelector("author").textContent = author;
+    clone.querySelector(".content").textContent = content;
+    $contenedor.appendChild(clone);
+  });
+};
+
+export { loadNosotrosHandler, loadCasasHandler, loadBlogHandler };

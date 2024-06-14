@@ -93,43 +93,21 @@
     <section class="container grid grid-cols-auto-fit-300 gap-4" id="blog">
       <article>
         <h1 class="sub">Nuestro Blog</h1>
-        <div class="space-y-6">
-          <div class="flex gap-4">
-            <img class="max-w-64" src="public/blog1.jpg" alt="blog1">
-            <div class="flex flex-col justify-between py-4">
-              <h2 class="text-xl md:text-2xl font-bold dark:text-rose-of-sharon-200">
-                Terraza en el techo de tu casa
-              </h2>
-              <p>
-                Escrito el: <time class="accent" datetime="20/10/2019">20/10/2019</time>
-                por: <author class="accent">Admin
-                </author>
-              </p>
-              <p>
-                Consejos para construir una terraza en el techo de tu casa, con los mejores materiales y ahorrando
-                dinero
-              </p>
-            </div>
-          </div>
-          <div class="flex gap-4">
-            <img class="max-w-64" src="public/blog2.jpg" alt="blog1">
-            <div class="flex flex-col justify-between py-4">
-              <h2 class="text-xl md:text-2xl font-bold dark:text-rose-of-sharon-200">
-                Terraza en el techo de tu casa
-              </h2>
-              <p>
-                Escrito el: <time class="accent" datetime="20/10/2019">20/10/2019</time>
-                por: <author class="accent">Admin
-                </author>
-              </p>
-              <p>
-                Consejos para construir una terraza en el techo de tu casa, con los mejores materiales y ahorrando
-                dinero
-              </p>
-            </div>
-          </div>
-        </div>
+        <div class="space-y-6" id="container-blog"></div>
 
+        <template id="template-blog">
+          <div class="flex flex-col sm:flex-row gap-4">
+            <img class="sm:max-w-64">
+            <div class="flex flex-col justify-between py-4">
+              <h2 class="text-xl md:text-2xl font-bold dark:text-rose-of-sharon-200"></h2>
+              <p>
+                Escrito el: <time class="accent"></time>
+                por: <author class="accent"></author>
+              </p>
+              <p class="content"></p>
+            </div>
+          </div>
+        </template>
       </article>
 
       <article class="max-w-prose">

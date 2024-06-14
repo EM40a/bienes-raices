@@ -1,4 +1,8 @@
-import { loadNosotrosHandler, loadCasasHandler } from "./contentLoad.js";
+import {
+  loadBlogHandler,
+  loadCasasHandler,
+  loadNosotrosHandler,
+} from "./contentLoad.js";
 
 document.addEventListener("DOMContentLoaded", onInit);
 
@@ -10,4 +14,5 @@ function onInit(e) {
   console.log("(yo soy el sabio)");
   loadNosotrosHandler(e);
   loadCasasHandler(e);
+  loadBlogHandler(e);
 }
